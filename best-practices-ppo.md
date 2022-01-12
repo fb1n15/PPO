@@ -6,10 +6,10 @@ parameters don't seem to be giving the level of performance you would like.
 
 ## Hyperparameters
 
-### Batch Size
+### mini-batch Size
 
-`batch_size` corresponds to how many experiences are used for each gradient descent update. This should always be a fraction
-of the `buffer_size`. If you are using a continuous action space, this value should be large (in 1000s). If you are using a discrete action space, this value should be smaller (in 10s).
+`mini-batch_size` corresponds to how many experiences are used for each gradient descent update. This should always be a fraction
+of the `buffer_size` or `train_batch_size`. If you are using a continuous action space, this value should be large (in 1000s). If you are using a discrete action space, this value should be smaller (in 10s).
 
 Typical Range (Continuous): `512` - `5120`
 
